@@ -1,0 +1,180 @@
+
+<!-- By: Jerusha Adon Ganupalli -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collab Nest</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px 8%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fc;
+        }
+
+        /* Main Heading */
+        h1 {
+            font-size: 42px;
+            margin: 0 0 8px 0;
+            color: #17365d;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-size: 17px;
+            color: #66809b;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px solid #b8d5ed;
+            margin-bottom: 35px;
+        }
+
+        /* About Us Heading */
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #24527a;
+        }
+
+        .intro {
+            font-size: 19px;
+            color: #45576a;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+        }
+
+        /* Cards */
+        .box {
+            flex: 1;
+            min-height: 270px;
+            background-color: white;
+            border: 1px solid #d5e3f0;
+            border-top: 5px solid #5796c9;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 4px 12px rgba(30, 70, 110, 0.08);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(30, 70, 110, 0.15);
+        }
+
+        .box h3 {
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #24527a;
+        }
+
+        /* Aim Section */
+        .sidebar p {
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.8;
+            color: #536779;
+        }
+
+        /* Features Section */
+        .main ul {
+            padding-left: 22px;
+            margin: 0;
+        }
+
+        .main li {
+            font-size: 17px;
+            line-height: 2;
+            color: #536779;
+        }
+
+        .main li::marker {
+            color: #5796c9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 5%;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Collab Nest</h1>
+
+    <p class="tagline">
+        Connect • Collaborate • Create
+    </p>
+
+    <hr>
+
+    <h2>About Us</h2>
+
+    <p class="intro">
+        Collab Nest is a collaborative platform designed to bring teams together,
+        making communication, idea sharing, and project management simple,
+        organized, and efficient.
+    </p>
+
+    <div class="container">
+
+        <!-- Aim Section -->
+        <div class="box sidebar">
+
+            <h3>Our Aim</h3>
+
+            <p>
+                To create a simple and effective platform where individuals
+                and teams can communicate, share ideas, manage projects,
+                and work together efficiently.
+            </p>
+
+        </div>
+
+        <!-- Features Section -->
+        <div class="box main">
+
+            <h3>Our Features</h3>
+
+            <ul>
+                <li>Easy and user-friendly interface.</li>
+                <li>Team communication and collaboration.</li>
+                <li>Easy sharing of files and resources.</li>
+                <li>Project and task management.</li>
+                <li>Idea sharing and team discussions.</li>
+                <li>Organized workspace for teams.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
